@@ -1,0 +1,32 @@
+{
+  "name": "typescript-prisma-example",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "db:migrate": "prisma migrate dev --name init"
+  },
+  "keywords": ["typescript", "prisma", "example", "sample", "demo"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travishorn/typescript-prisma-example.git"
+  },
+  "author": "Travis Horn <travis@travishorn.com> (https://travishorn.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/travishorn/typescript-prisma-example/issues"
+  },
+  "homepage": "https://github.com/travishorn/typescript-prisma-example#readme",
+  "prisma": {
+    "seed": "ts-node-dev prisma/seed.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "prisma": "^4.9.0",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.9.0"
+  }
+}
